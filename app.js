@@ -180,10 +180,14 @@ var typed = new Typed(".autotype",{
 })
 
 // twnikle animation
-window.addEventListener("DOMContentLoaded", event => {
-    const audio = new Audio('better.mp3')
-    audio.volume = 0.1;
+ function playSound(songname ,loop){
+       console.log("start")
+    let audio = new Audio(songname)
+    audio.loop = loop
+    audio.volume = 0.01
     audio.play();
-  });
+    console.log("end")
+   }
+   playSound("parachute.mp3",true)
 
     
