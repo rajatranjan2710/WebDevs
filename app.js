@@ -180,5 +180,10 @@ var typed = new Typed(".autotype",{
 })
 
 // twnikle animation
+window.addEventListener("DOMContentLoaded", event => {
+    const audio = new Audio('better.mp3')
+    audio.volume = 0.1;
+    audio.play();
+  });
 
     
